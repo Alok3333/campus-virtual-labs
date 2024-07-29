@@ -1,0 +1,8 @@
+.links a {
+    text-decoration: none;
+}
+
+.links li {
+    padding: 16px;
+    font-size: 18px;
+}
