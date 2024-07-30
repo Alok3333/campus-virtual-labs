@@ -8,7 +8,7 @@ import styles from "./Simulation.module.css";
 import { useState } from "react";
 import { useSnackbar } from "notistack";
 
-function Simulation() {
+function SimulationOne() {
   const [isVccOne, setIsVccOne] = useState(false);
   const [isGndOne, setIsGndOne] = useState(false);
   const [isRedOne, setIsRedOne] = useState(false);
@@ -40,7 +40,7 @@ function Simulation() {
       <Box sx={{ padding: "20px 40px" }}>
         <Typography variant="h4" align="center">
           Analysis and Synthesis of Boolean Expressions using Basic Logic Gates
-          - Test III
+          - Test IV
         </Typography>
         <Grid container sx={{ marginTop: "20px" }}>
           <Grid item xs={3}></Grid>
@@ -190,10 +190,18 @@ function Simulation() {
 
               {/* --------------- work start from here */}
               {isVccOne && isVccTwo && isVccThree ? (
-                isRedOne && isRedTwo ? (
+                isRedOne && isRedThree ? (
                   <img src={onlight} className={styles.imgOnLight} />
-                ) : (<img src={offlight} className={styles.imgOffLight} />) &&
-                  isRedThree &&
+                ) : <img src={offlight} className={styles.imgOffLight} /> &&
+                  isRedTwo &&
+                  isRedThree ? (
+                  <img src={onlight} className={styles.imgOnLight} />
+                ) : <img src={offlight} className={styles.imgOffLight} /> &&
+                  isRedTwo &&
+                  isRedFour ? (
+                  <img src={onlight} className={styles.imgOnLight} />
+                ) : <img src={offlight} className={styles.imgOffLight} /> &&
+                  isRedOne &&
                   isRedFour ? (
                   <img src={onlight} className={styles.imgOnLight} />
                 ) : (
@@ -214,4 +222,4 @@ function Simulation() {
   );
 }
 
-export default Simulation;
+export default SimulationOne;

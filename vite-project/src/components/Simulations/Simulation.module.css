@@ -74,3 +74,15 @@
     right: 78px;
 
 }
+
+.middleGrid .imgOnLight {
+    position: absolute;
+    top: 121px;
+    right: 0px;
+}
+
+.middleGrid .imgOffLight {
+    position: absolute;
+    top: 121px;
+    right: -1px;
+}
