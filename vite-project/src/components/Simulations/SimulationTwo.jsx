@@ -43,7 +43,7 @@ function SimulationTwo() {
   return (
     <>
       <Box sx={{ padding: "20px 40px" }}>
-        <Typography variant="h4" align="center">
+        <Typography variant="h4" align="center" sx={{ fontSize: "18px" }}>
           Characterization of Digital Logic Families - Experiment I
         </Typography>
         <Grid container sx={{ marginTop: "20px" }}>
@@ -63,7 +63,7 @@ function SimulationTwo() {
                     position: "absolute",
                     top: "118px",
                     left: "5px",
-                    padding: "0"
+                    padding: "0",
                   }}
                 >
                   <Slider

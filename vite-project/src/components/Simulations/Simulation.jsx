@@ -38,15 +38,21 @@ function Simulation() {
   return (
     <>
       <Box sx={{ padding: "20px 40px" }}>
-        <Typography variant="h4" align="center">
+        <Typography variant="h4" align="center" sx={{ fontSize: "18px" }}>
           Analysis and Synthesis of Boolean Expressions using Basic Logic Gates
           - Experiment III
         </Typography>
         <Grid container sx={{ marginTop: "20px" }}>
-          <Grid item xs={3}></Grid>
-          <Grid item xs={6}>
+          {/* <Grid item xs={3}></Grid> */}
+          {/* <Grid item> */}
             <Card sx={{ minWidth: 275 }} className={styles.middleGrid}>
-              <img src={chobi} />
+              <img
+                loading="lazy"
+                src={chobi}
+                className="img-fluid"
+                alt="Responsive image"
+              />
+              {/* <img src={chobi} /> */}
 
               {!isVccOne ? (
                 <img
@@ -246,8 +252,8 @@ function Simulation() {
               {/* <img src={onlight} className={styles.imgOnLight} /> */}
               {/* <img src={offlight} className={styles.imgOffLight} /> */}
             </Card>
-          </Grid>
-          <Grid item xs={3}></Grid>
+          {/* </Grid> */}
+          {/* <Grid item xs={3}></Grid> */}
         </Grid>
       </Box>
     </>
