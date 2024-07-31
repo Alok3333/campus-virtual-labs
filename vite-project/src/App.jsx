@@ -4,6 +4,8 @@ import { Routes, Route } from "react-router-dom";
 import Simulation from "./components/Simulations/Simulation";
 import { SnackbarProvider } from "notistack";
 import SimulationOne from "./components/Simulations/SimulationOne";
+import SimulationTwo from "./components/Simulations/SimulationTwo";
+import GraphChart from "./components/Simulations/GraphChart";
 
 const App = () => {
   return (
@@ -16,6 +18,8 @@ const App = () => {
             <SnackbarProvider>
               <Simulation />
               <SimulationOne />
+              <SimulationTwo />
+              <GraphChart/>
             </SnackbarProvider>
           }
         />

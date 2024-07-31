@@ -1,0 +1,18 @@
+.ttlmiddleGrid {
+    position: relative;
+}
+
+.ttlRangeInput {
+    position: "absolute";
+    top: "260px";
+    left: "20px";
+}
+
+.ttlmiddleGrid  {
+    width: fit-content;
+    height: fit-content;
+}
+
+/* .ttlmiddleGrid .customRange {
+    height: 20px;
+} */

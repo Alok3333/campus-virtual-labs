@@ -1,7 +1,7 @@
 import { Box, Card, Grid, Typography } from "@mui/material";
 import chobi from "../../assets/chobi.jpg";
-import redbtn from "../../assets/red.jpg";
-import greenbtn from "../../assets/green.jpg";
+import redbtn from "../../assets/switchOff.png";
+import greenbtn from "../../assets/switchOn.png";
 import onlight from "../../assets/on.jpg";
 import offlight from "../../assets/off.jpg";
 import styles from "./Simulation.module.css";
@@ -40,7 +40,7 @@ function SimulationOne() {
       <Box sx={{ padding: "20px 40px" }}>
         <Typography variant="h4" align="center">
           Analysis and Synthesis of Boolean Expressions using Basic Logic Gates
-          - Test IV
+          - Experiment IV
         </Typography>
         <Grid container sx={{ marginTop: "20px" }}>
           <Grid item xs={3}></Grid>
@@ -50,12 +50,16 @@ function SimulationOne() {
 
               {!isVccOne ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={handleClickBtn}
                   className={styles.img1}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsVccOne(!isVccOne)}
                   className={styles.img2}
@@ -64,12 +68,16 @@ function SimulationOne() {
 
               {!isGndOne ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsGndOne(!isGndOne)}
                   className={styles.img3}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsGndOne(!isGndOne)}
                   className={styles.img4}
@@ -78,12 +86,16 @@ function SimulationOne() {
 
               {!isRedOne ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsRedOne(!isRedOne)}
                   className={styles.img5}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsRedOne(!isRedOne)}
                   className={styles.img6}
@@ -92,12 +104,16 @@ function SimulationOne() {
 
               {!isRedTwo ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsRedTwo(!isRedTwo)}
                   className={styles.img7}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsRedTwo(!isRedTwo)}
                   className={styles.img8}
@@ -106,12 +122,16 @@ function SimulationOne() {
 
               {!isRedThree ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsRedThree(!isRedThree)}
                   className={styles.img9}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsRedThree(!isRedThree)}
                   className={styles.img10}
@@ -120,12 +140,16 @@ function SimulationOne() {
 
               {!isRedFour ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsRedFour(!isRedFour)}
                   className={styles.img11}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsRedFour(!isRedFour)}
                   className={styles.img12}
@@ -134,12 +158,16 @@ function SimulationOne() {
 
               {!isVccTwo ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsVccTwo(!isVccTwo)}
                   className={styles.img13}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsVccTwo(!isVccTwo)}
                   className={styles.img14}
@@ -148,12 +176,16 @@ function SimulationOne() {
 
               {!isGndTwo ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsGndTwo(!isGndTwo)}
                   className={styles.img15}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsGndTwo(!isGndTwo)}
                   className={styles.img16}
@@ -162,12 +194,16 @@ function SimulationOne() {
 
               {!isVccThree ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsVccThree(!isVccThree)}
                   className={styles.img17}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsVccThree(!isVccThree)}
                   className={styles.img18}
@@ -176,12 +212,16 @@ function SimulationOne() {
 
               {!isGndThree ? (
                 <img
+                  width="46"
+                  height="34"
                   src={redbtn}
                   onClick={() => setIsGndThree(!isGndThree)}
                   className={styles.img19}
                 />
               ) : (
                 <img
+                  width="50"
+                  height="35"
                   src={greenbtn}
                   onClick={() => setIsGndThree(!isGndThree)}
                   className={styles.img20}
