@@ -42,16 +42,18 @@ function SimulationOne() {
           Analysis and Synthesis of Boolean Expressions using Basic Logic Gates
           - Experiment IV
         </Typography>
-        <Grid container sx={{ marginTop: "20px" }}>
+        <Grid container sx={{ marginTop: "20px", display: "flex", justifyContent: "center" }}>
           {/* <Grid item xs={3}></Grid> */}
-          <Grid item>
+          {/* <Grid item> */}
             <Card sx={{ minWidth: 275 }} className={styles.middleGrid}>
+            <div className="text-center">
               <img
                 loading="lazy"
                 src={chobi}
                 className="img-fluid"
                 alt="Responsive image"
               />
+              </div>
               {/* <img src={chobi} /> */}
 
               {!isVccOne ? (
@@ -260,7 +262,7 @@ function SimulationOne() {
               {/* <img src={onlight} className={styles.imgOnLight} /> */}
               {/* <img src={offlight} className={styles.imgOffLight} /> */}
             </Card>
-          </Grid>
+          {/* </Grid> */}
           {/* <Grid item xs={3}></Grid> */}
         </Grid>
       </Box>

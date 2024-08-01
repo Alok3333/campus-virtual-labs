@@ -6,6 +6,7 @@ import { SnackbarProvider } from "notistack";
 import SimulationOne from "./components/Simulations/SimulationOne";
 import SimulationTwo from "./components/Simulations/SimulationTwo";
 import GraphChart from "./components/Simulations/GraphChart";
+import SimulationThree from "./components/Simulations/SimulationThree";
 
 const App = () => {
   return (
@@ -13,18 +14,21 @@ const App = () => {
       <Header />
       <Routes>
         <Route
-          path="simulation"
+          path="/simulation"
           element={
             <SnackbarProvider>
               <Simulation />
               <SimulationOne />
               <SimulationTwo />
-              <GraphChart/>
             </SnackbarProvider>
           }
-        />
+        >
+          <Route path="characteristicplot" element={<GraphChart />} />
+        </Route>
+        {/* <Route path="CharacteristicPlot" element={<GraphChart />} /> */}
         <Route path="experiments" element={<Experiments />} />
       </Routes>
+      <SimulationThree/>
     </div>
   );
 };
