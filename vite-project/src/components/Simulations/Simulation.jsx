@@ -1,12 +1,19 @@
 import { Box, Card, Grid, Typography } from "@mui/material";
-import chobi from "../../assets/chobi.jpg";
-import redbtn from "../../assets/switchOff.png";
-import greenbtn from "../../assets/switchOn.png";
-import onlight from "../../assets/on.jpg";
-import offlight from "../../assets/off.jpg";
 import styles from "./Simulation.module.css";
 import { useState } from "react";
 import { useSnackbar } from "notistack";
+
+const redbtn =
+  "https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/8-2024-5-2121-switchOff.png";
+
+const greenbtn =
+  "https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/8-2024-5-2332-switchOn.png";
+
+const onlight =
+  "https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/8-2024-5-2710-on.jpg";
+
+const offlight =
+  "https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/8-2024-5-2857-off.jpg";
 
 function Simulation() {
   const [isVccOne, setIsVccOne] = useState(false);
@@ -51,7 +58,7 @@ function Simulation() {
           <Card sx={{ minWidth: 275 }} className={styles.middleGrid}>
             <img
               loading="lazy"
-              src={chobi}
+              src="https://jadavpuruniversity.s3-ap-south-1.amazonaws.com/8-2024-5-1729-chobi.jpg"
               className="img-fluid"
               alt="Responsive image"
             />
